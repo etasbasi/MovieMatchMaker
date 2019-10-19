@@ -1,22 +1,24 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  width: fit-content;
+  margin: auto;
+}
+
+.table {
+  margin: 40px auto 0 auto;
+  width: 800px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.table tr td {
+  background-color: #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+@media (max-width: 850px) {
+  .table {
+    width: 100%;
+  }
 }
