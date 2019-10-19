@@ -31,39 +31,6 @@ function processData(allText) {
 
 }
 
-// function App() {
-//   const [data, setData] = useState([]);
-//   const [columns, setColumns] = useState([]);
-  
-
-// useEffect(() => {
-//   fetch('/data').then(res => res.text()).then(res => {
-//   let processedData = processData(res);
-//     setData(processedData.lines);
-
-//     let newColumns = processedData.headers.map((genre) => {
-//       return { Header: genre, accessor: genre, getProps: (state, rowInfo, column) => {
-//           return {
-//             style: {
-//                 background:  rowInfo ? getColor(rowInfo.row[genre]) : "",
-//             },
-//         };
-//     }, };
-//     });
-//     setColumns(newColumns);
-
-// });
-// }, [data, columns])
-
-//   console.log('App rendered');
-//   return (
-    
-//   <div>
-//     <h1>Movie Matchmaker</h1>
-//     <ReactTable className="table" data={data} columns={columns} />
-//     </div>);
-// }
-
 class App extends Component {
   state = {
     data: [], columns: []
