@@ -17,6 +17,29 @@ h1 {
   background-color: #ccc;
 }
 
+.text-area {
+  margin: auto;
+  width: fit-content;
+}
+
+.text-area .max input {
+  width: 350px;
+}
+
+textarea {
+  width: 600px;
+  height: 400px;
+  margin: 100px auto 0 auto;
+}
+
+button {
+  font-size: 1.4em;
+  width: 120px;
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 850px) {
   .table {
     width: 100%;
