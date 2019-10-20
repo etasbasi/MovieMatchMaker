@@ -9,13 +9,17 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use(express.static(path.resolve(__dirname, 'public')));
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, "public", "index.html"));
-});
 
 app.get('/data', (req, res) => {
   res.sendFile(path.resolve(__dirname, "public", "demo.txt"));
 })
+
+
+app.use(express.static("/build"));
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, "public", "index.html"));
+});
+
 
 const port = process.env.PORT || 5000;
 
